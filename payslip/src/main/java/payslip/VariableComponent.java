@@ -11,7 +11,7 @@ public class VariableComponent {
    public VariableComponent(){
 	  
 	  FixedComponent var = new FixedComponent();
-      this.variable = ((var.totalFixedComponent()) * 10)/100;
+      this.variable = ((var.totalFixedComponent()) * 9)/100;
    }
       
    // prints the variable pay
