@@ -16,6 +16,7 @@ public class Uat {
         }   
         @BeforeTest
         public void beforeTest() {  
+        	System.setProperty("webdriver.firefox.bin","/usr/bin/firefox");
             driver = new FirefoxDriver();  
         }       
         @AfterTest
