@@ -16,7 +16,7 @@ public class Uat {
         }   
         @BeforeTest
         public void beforeTest() {  
-        	System.setProperty("webdriver.chrome.bin","/opt/google/chrome/chrome");
+        	System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
         	//System.setProperty("webdriver.firefox.bin","/usr/bin/firefox");
         	//System.setProperty("webdriver.gecko.driver","G:\\Selenium\\Firefox driver\\geckodriver.exe");
             driver = new ChromeDriver();  
