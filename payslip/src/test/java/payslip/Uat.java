@@ -23,8 +23,8 @@ public class Uat {
         	//System.setProperty("webdriver.firefox.bin","/usr/bin/firefox");
         	//System.setProperty("webdriver.gecko.driver","G:\\Selenium\\Firefox driver\\geckodriver.exe");
             //driver = new ChromeDriver();
-        	FirefoxBinary binary = new FirefoxBinary(new File("/usr/bin/firefox"));
-            binary.setEnvironmentProperty("DISPLAY",System.getProperty("lmportal.xvfb.id",":99"));
+        	//FirefoxBinary binary = new FirefoxBinary(new File("/usr/bin/firefox"));
+            //binary.setEnvironmentProperty("DISPLAY",System.getProperty("lmportal.xvfb.id",":99"));
         	driver = new FirefoxDriver();
         	
         	
