@@ -1,7 +1,9 @@
 package payslip;
 
+import java.io.File;
+
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
@@ -21,7 +23,12 @@ public class Uat {
         	//System.setProperty("webdriver.firefox.bin","/usr/bin/firefox");
         	//System.setProperty("webdriver.gecko.driver","G:\\Selenium\\Firefox driver\\geckodriver.exe");
             //driver = new ChromeDriver();
+        	FirefoxBinary binary = new FirefoxBinary(new File("/usr/bin/firefox"));
+            binary.setEnvironmentProperty("DISPLAY",System.getProperty("lmportal.xvfb.id",":99"));
         	driver = new FirefoxDriver();
+        	
+        	
+            //driver = new FirefoxDriver(binary,null);
             
             
            
