@@ -2,6 +2,7 @@ package payslip;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -19,7 +20,8 @@ public class Uat {
         	//System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
         	//System.setProperty("webdriver.firefox.bin","/usr/bin/firefox");
         	//System.setProperty("webdriver.gecko.driver","G:\\Selenium\\Firefox driver\\geckodriver.exe");
-            driver = new ChromeDriver();  
+            //driver = new ChromeDriver();
+        	driver = new FirefoxDriver();
             
             
            
